@@ -1,12 +1,15 @@
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 
 /* Style the body */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
+
+
 
 /* Header/logo Title */
 .header {
@@ -32,6 +35,28 @@ body {
 .header a:hover{
     text-decoration: underline;
 }
+
+
+
+
+/* Phones */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* Tablets */
+@media only screen and (max-width: 992px) {
+    
+}
+
+/* Desktops */
+@media only screen and (min-width: 992px) {
+    
+} 
+
+
+
+
 
 
 
@@ -76,22 +101,33 @@ color: black;
 
 /* Column container */
 .row {  
-display: -ms-flexbox; /* IE10 */
-display: flex;
--ms-flex-wrap: wrap; /* IE10 */
-flex-wrap: wrap;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
 /* Main column */
 .main {  
-flex: 70%;
-background-color: white;
-padding: 20px;
-align-content: center;
-padding-left: 10%;
-padding-right: 10%;
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    align-content: center;
+    max-width: 80%;
 }
+
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 20%;
+    padding: 20px;
+    text-align: center;
+}
+
 
 /* Fake image, just for this example */
 .fakeimg {
