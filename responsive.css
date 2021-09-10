@@ -39,27 +39,6 @@ body {
 
 
 
-/* Phones */
-@media only screen and (max-width: 768px) {
-    
-}
-
-/* Tablets */
-@media only screen and (max-width: 992px) {
-    
-}
-
-/* Desktops */
-@media only screen and (min-width: 992px) {
-    
-} 
-
-
-
-
-
-
-
 /* Style the top navigation bar */
 .navbar {
     font-family: 'Roboto', sans-serif;
@@ -116,15 +95,15 @@ color: black;
 .main {  
     flex: 70%;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     align-content: center;
     max-width: 80%;
 }
 
 .side {
     -ms-flex: 30%; /* IE10 */
-    flex: 20%;
-    padding: 20px;
+    flex: 100%;
+    padding: 10px;
     text-align: center;
 }
 
@@ -142,6 +121,52 @@ padding: 20px;
 text-align: center;
 background: #ddd;
 }
+
+
+
+
+/* Phones */
+@media only screen and (max-width: 768px) {
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-right:0px;
+        padding-left: 0px;
+        background-color: teal;
+    }
+    
+    .main {
+        padding: 2px;
+    }
+
+    .side {
+        padding:0px;
+    }
+}
+
+/* Tablets */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .row {
+        padding-right: 5%;
+        padding-left: 5%;
+        background-color: yellow;
+    }
+    
+}
+
+/* Desktops */
+@media only screen and (min-width: 992px) {
+    
+} 
+
+
+
+
+
+
+
+
+
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
