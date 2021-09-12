@@ -98,6 +98,8 @@ color: black;
     max-width: 100%;
     font-size: x-large;
     font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
 }
 
 /* A project Card */
@@ -106,23 +108,40 @@ color: black;
     background-color: whitesmoke;
     padding: 10px;
     justify-content: center;
+    align-content: center;
     max-width: 500px;
     border-radius: 10px;
-    border-color: rgb(117, 117, 117);
-    border-style: solid;
-    border-width: thin;
     margin: 5px;
+}
+
+.project img {
+    text-align: center;
 }
 
 .project h1 {
     font-size: large;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 0px;
 }
+
+.project h2 {
+    margin-top: 0px;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.project h3 {
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
 
 .project p {
     border-radius: 5px;
     padding: 2px;
-    border-style: solid;
+    border-style: none;
     background-color: rgb(214, 214, 214);
     border-color: rgb(117, 117, 117);
     border-width: thin;
