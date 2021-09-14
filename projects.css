@@ -195,6 +195,9 @@ color: black;
     margin: 5px;
 }
 
+.project-details li{
+    margin-top: 5px;
+}
 
 .project-details h1 {
     font-size: large;
