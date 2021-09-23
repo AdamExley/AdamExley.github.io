@@ -163,6 +163,7 @@
       margin-left: -100px;
       display: block;
       z-index: 1;
+      margin-top: 8px;
   }
   .tooltip:hover .tooltiptext {
       visibility: visible;
