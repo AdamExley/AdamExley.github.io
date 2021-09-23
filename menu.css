@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-/* Style the top navigation bar */
+/* Navigation bar */
 .navbar {
     font-family: 'Roboto', sans-serif;
     padding-left: 5%;
@@ -11,7 +11,7 @@
     background-color: #222;
 }
 
-/* Style the navigation bar links */
+/* Navigation bar links */
 .navbar a {
     float: left;
     display: block;
@@ -44,31 +44,40 @@ color: black;
 display: none;
 }
 
-
-
-/* Phones */
+/* Phone/Tablet-Specific Menu */
 @media only screen and (max-width: 768px) {
 
+    /* Only show selected until menu shown */
     .navbar a:not(.selected) {display: none;}
 
-    .navbar a {
-        max-width:85%;
-    }
+    /* Menu Icon */
     .navbar a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
+        z-index: 99;
+        background-color: #222;
     }
 
+    /* Hover Menu Icon */
+    .navbar a.icon:hover {
+        background-color:white;
+    }
+
+    /* Open Menu */
     .navbar.responsive {position: relative;}
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 5%;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+
+    /* Open Menu Icon */
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 5%;
+        top: 0;
+    }
+
+    /* Open Menu Links */
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 
 }
