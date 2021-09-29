@@ -24,6 +24,8 @@
     <!-- For Responsive Menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../menu.js"></script>
+    
+    
 </head>
 <body>
 
@@ -45,17 +47,21 @@
   </a>
 </div>
 
-<h4 style="color:red">Research</h1>
-<h4 style="color:green">Industry</h1>
-<h4 style="color:blue">Class</h1>
-<h4 style="color:purple">Personal</h1>
-
-
 <div class="row">
+    <div id="myFilters">
+        <button class="filterButton active" onclick="filterSelection('all')"> Show All</button>
+        <button class="filterButton" onclick="filterSelection('research')" style="color:red"> Research</button>
+        <button class="filterButton" onclick="filterSelection('industry')" style="color:green"> Industry</button>
+        <button class="filterButton" onclick="filterSelection('class')" style="color:blue"> Class</button>
+        <button class="filterButton" onclick="filterSelection('personal')" style="color:purple"> Personal</button>
+
+    </div>
+    <script src="filter.js"></script>
+
 <div class="title">Ongoing</div>
 
 
-    <div class="project">
+    <div class="project research">
         <div class="top">
             <div class="basic-info">
                 <h1 style="color:red">Research</h1>
@@ -79,7 +85,7 @@
     
     </div>
 
-    <div class="project">
+    <div class="project personal">
         <div class="top">
             <div class="basic-info">
                 <h1 style="color:purple">Personal</h1>
@@ -99,7 +105,7 @@
         </details> 
     </div>
 
-    <div class="project">
+    <div class="project personal">
         <div class="top">
             <div class="basic-info">
                 <h1 style="color:purple">Personal</h1>
@@ -111,7 +117,7 @@
         <details>
             <summary>Project Details</summary>
             <ul>
-                <li>I've built this website from scratch using HTML and CSS.</li>
+                <li>I've built this website from scratch using HTML, CSS, and a <em>bit</em> of Javascript.</li>
                 <li>The site is currently hosted on GitHub Pages, so I'm limited to a relatively static site as of now.</li>
                 <li>As I learn more CSS and HTML, this site may get spruced up! If I get a proper host, maybe I'll even add in some PHP.</li>
             </ul>
@@ -121,7 +127,7 @@
 
 <div class="title">Completed</div>
 
-    <div class="project">
+    <div class="project industry">
         <div class="top">
             <div class="basic-info">
                 <h1 style="color:green">Industry</h1>
@@ -144,7 +150,7 @@
     </div>
 
 
-    <div class="project">
+    <div class="project research">
         <div class="top">
             <div class="basic-info">
                 <h1 style="color:red">Research</h1>
@@ -167,7 +173,7 @@
     </div>
 
 
-    <div class="project">
+    <div class="project class">
         <div class="top">
             <div class="basic-info">
                 <h1 style="color:blue">Class</h1>
@@ -189,7 +195,7 @@
     </div>
 
 
-    <div class="project">
+    <div class="project class">
         <div class="top">
             <div class="basic-info">
                 <h1 style="color:blue">Class</h1>
@@ -211,7 +217,7 @@
     </div>
 
 
-    <div class="project">
+    <div class="project research">
         <div class="top">
             <div class="basic-info">
                 <h1 style="color:red">Research</h1>

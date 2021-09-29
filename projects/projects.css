@@ -1,6 +1,11 @@
 @import "../responsive.css";
 
 
+.hide{
+    display: none;
+}
+
+
 /* Column container */
 .row {  
     display: -ms-flexbox; /* IE10 */
@@ -14,7 +19,29 @@
     padding-bottom: 20px;
 }
 
+.filterButton{
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    box-shadow: 2px 2px 2px rgb(180, 180, 180);
+}
 
+.filterButton:hover{
+    background-color: #ddd;
+    box-shadow: 1px 1px 1px rgb(180, 180, 180);
+}
+
+.filterButton.active {
+    background-color: #ddd;
+    box-shadow: 1px 1px 1px rgb(180, 180, 180);
+}
 
 
 /* Project divider */
@@ -31,14 +58,20 @@
 /* A project Card */
 .project {  
     flex: 100%;
-    background-color: rgb(230, 230, 230);
+    background-color: #eee;
     padding: 10px;
     justify-content: center;
     align-content: center;
     max-width: 650px;
     border-radius: 10px;
     margin: 5px;
+    box-shadow: 3px 3px 3px rgb(180, 180, 180);
 }
+
+.project:hover{
+    box-shadow: 5px 5px 3px rgb(180, 180, 180);
+}
+
 
 .project .top {
     display: -ms-flexbox; /* IE10 */
@@ -100,8 +133,9 @@
 .divider {
     margin-top: 5px;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: lightgray;
+    z-index: 999;
 }
   
 
