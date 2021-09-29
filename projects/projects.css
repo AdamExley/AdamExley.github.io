@@ -217,7 +217,7 @@ details[open] summary {
     flex-direction: column;
 }
 .project{
-    max-width: 100%;
+    width: 100%;
 }
 
 .project .top img {   
@@ -230,10 +230,17 @@ details[open] summary {
     .project .top img {   
         max-width: 30%;
     }
+    .project{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px) {
+
     .project .top img {   
         display: none;
+    }
+    .project .top .basic-info{
+        max-width: 100%;
     }
 }
