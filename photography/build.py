@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 ASPECT_RATIO = 1
 
-MAX_DIM = 300
+MAX_DIM = 600
 
 def get_paths(dirname):
     IMG_EXTS = ['.jpg','.JPG','.jpeg','.JPEG','.png','.PNG']
