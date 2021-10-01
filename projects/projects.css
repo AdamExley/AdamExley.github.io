@@ -43,6 +43,14 @@
     box-shadow: 1px 1px 1px rgb(180, 180, 180);
 }
 
+.filterSubcontainer{
+    display: inline-block;
+}
+
+.filterContainer{
+    display: block;
+    text-align: center;
+}
 
 /* Project divider */
 .title {
@@ -84,6 +92,7 @@
     text-align: center;
     max-width: 60%;
     object-fit: contain;
+    max-height: 225px;
 }
 
 .project .top .basic-info{
@@ -242,5 +251,9 @@ details[open] summary {
     }
     .project .top .basic-info{
         max-width: 100%;
+    }
+
+    .topfilter{
+        width: 100%;
     }
 }
