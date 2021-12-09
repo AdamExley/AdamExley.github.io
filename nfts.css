@@ -24,27 +24,17 @@ body {
     margin-bottom: 0px;
 }
 
-.header a{
-    text-decoration: none;
-    color: white;
-}
-
-.header a:hover{
-    text-decoration: underline;
-}
 
 
 /* Column container */
 .row {  
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
+
     align-items: center;
     justify-content: center;
-    padding-right: 10%;
-    padding-left: 10%;
-    height: 500px;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 1000px;
+
 }
 
 
@@ -59,37 +49,40 @@ body {
     border-radius: 20px;
     margin: 10px;
 
-    transition-property: max-width;
+    transition-property: color;
     transition-duration: .5s;
 
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sect ul{
+    max-width: 60%;
+}
+
+.sect ul li{
+    padding-bottom: 10px;
 }
 
 .sect h1 {
     margin: 0px;
-    max-width: 69%;
+    max-width: 60%;
+    color: black;
 }
 
 .sect img{
-    max-width: 30%;
-    display: flex;
+    max-width: 95%;
+    display: inline-block;
 }
 
-.sect .subsect {
-    display: none;
-    color: rgba(0, 0, 0, 0.5);
-    max-width: 70%;
-    transition-property: color;
-    transition-duration: 5s;
-}
-
-
-
-.sect:hover{
-    max-width: 81%;
-}
-
-.sect:hover  .subsect {
+.sect table{
+    max-width: 40%;
+    float: right;
     display: block;
+    text-align: center;
+
+}
+
+.sect:hover {
     color: rgba(0, 0, 0, 1);
 }
 
@@ -152,8 +145,4 @@ background: #ddd;
     width: 100%;
 }
 }
-
-
-
-
 
