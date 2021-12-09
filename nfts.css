@@ -28,13 +28,25 @@ body {
 
 /* Column container */
 .row {  
-
     align-items: center;
     justify-content: center;
     padding-right: 5%;
     padding-left: 5%;
-    height: 1000px;
+    /* height: 1000px; */
 
+}
+
+.warn{
+    display: none;
+    flex: 70%;
+    background-color: white;
+    padding: 10px;
+    align-content: center;
+    max-width: 80%;
+    background-color: #ddd;
+    border-radius: 20px;
+    margin: 10px;
+    color: rgba(230, 0, 0, 0.6);
 }
 
 
@@ -110,39 +122,13 @@ background: #ddd;
 
 /* Phones */
 @media only screen and (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-right:0px;
-        padding-left: 0px;
-    }
-    
-    .sect {
-        padding: 2px;
-        width: 90%;
+
+
+    .warn {
+        display: flex;
     }
 
-    .side {
-        padding:0px;
-    }
-}
-
-/* Tablets */
-@media only screen and (max-width: 992px) and (min-width: 768px) {
-    .row {
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-    
 }
 
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-.navbar a {
-    float: none;
-    width: 100%;
-}
-}
 
