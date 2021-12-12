@@ -63,7 +63,7 @@ body {
     transition-property: color;
     transition-duration: .5s;
 
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .sect ul{
