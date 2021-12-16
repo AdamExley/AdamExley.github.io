@@ -8,10 +8,10 @@
 
 /* Column container */
 .row {  
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+
     align-items: center;
     justify-content: center;
     padding-right: 5%;
@@ -221,10 +221,27 @@ details[open] summary {
 /* Responsive Design*/
 
 
-@media screen and (max-width: 800px) {
-.row {   
-    flex-direction: column;
+
+
+
+
+@media screen and (min-width: 1500px) {
+    .row {   
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
+
+
+@media screen and (max-width: 1000px) {
+    .row {   
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+
 .project{
     width: 100%;
 }
