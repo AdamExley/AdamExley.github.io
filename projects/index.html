@@ -50,10 +50,10 @@
     <div class="filterContainer" id="myFilters">
         <div class="filterSubcontainer"><button class="filterButton active" onclick="filterSelection('all')"> Show All</button></div>
         <div class="filterSubcontainer">
-            <button class="filterButton" onclick="filterSelection('research')" style="color:red"> Research</button>
-            <button class="filterButton" onclick="filterSelection('industry')" style="color:green"> Industry</button>
-            <button class="filterButton" onclick="filterSelection('class')" style="color:blue"> Class</button>
-            <button class="filterButton" onclick="filterSelection('personal')" style="color:purple"> Personal</button>
+            <button class="filterButton" onclick="filterSelection('research')" style="color:var(--research-color)"> Research</button>
+            <button class="filterButton" onclick="filterSelection('industry')" style="color:var(--industry-color)"> Industry</button>
+            <button class="filterButton" onclick="filterSelection('class')" style="color:var(--class-color)"> Class</button>
+            <button class="filterButton" onclick="filterSelection('personal')" style="color:var(--personal-color)"> Personal</button>
         </div>
 
     </div>
@@ -68,10 +68,11 @@
     <div class="project research">
         <div class="top">
             <div class="basic-info">
-                <h1 style="color:red">Research</h1>
+                <h1 style="color:var(--research-color)">Research</h1>
                 <h2>Augmented Reality Paint Simulation</h2>
                 <h3>October 2021 – Present</h3>
-                <h4><span class="tooltip">AIMS Lab<span class="tooltiptext">Artificially Intelligent Manufacturing Systems Lab</span></span> | <span class="tooltip">CDME<span class="tooltiptext">Center for Design and Manufacturing Excellence</span></span> at Ohio State University</h4>
+                <h4><span class="tooltip">AIMS Lab<span class="tooltiptext">Artificially Intelligent Manufacturing Systems Lab</span></span> | <span class="tooltip">CDME<span class="tooltiptext">Center for Design and Manufacturing Excellence</span></span> @ <span class="tooltip">OSU<span class="tooltiptext">Ohio State University</span></span></h4>
+                <h5><span class="skill">C#</span><span class="skill">Unity</span></h5>
             </div>
         </div>
         <div class = "divider"></div>
@@ -92,9 +93,10 @@
     <div class="project personal">
         <div class="top">
             <div class="basic-info">
-                <h1 style="color:purple">Personal</h1>
+                <h1 style="color:var(--personal-color)">Personal</h1>
                 <h2>Fixing DSLR Cameras</h2>
                 <h3>Began Summer of 2020</h3>
+                <h5><span class="skill">Soldering</span><span class="skill">Troubleshooting</span></h5>
             </div>
             <img src="../assets/images/camera_innards.jpg" style="max-width: 50%;">
         </div>
@@ -112,9 +114,10 @@
     <div class="project personal">
         <div class="top">
             <div class="basic-info">
-                <h1 style="color:purple">Personal</h1>
+                <h1 style="color:var(--personal-color)">Personal</h1>
                 <h2>This Website</h2>
                 <h3>Began September 2021</h3>
+                <h5><span class="skill">HTML</span><span class="skill">CSS</span></h5>
             </div>
         </div>
         <div class = "divider"></div>
@@ -129,16 +132,46 @@
     </div>
 
 </div>
+
+
+
+
+
+
 <div class="title">Completed</div>
 <div class="row">
+
+    <div class="project personal">
+        <div class="top">
+            <div class="basic-info">
+                <h1><span style="color:var(--personal-color)">Personal</span></h1>
+                <h2>fMRI MP4 to 3D Model Converter</h2>
+                <h3>September 2021</h3>
+                <h5><span class="skill">Python</span></h5>
+            </div>
+            <img src="../assets/images/brain.png">
+        </div>
+        <div class = "divider"></div>
+        <details>
+            <summary>Project Details</summary>
+            <ul>
+                <li>I had an fMRI done and recieved .mp4 videos of my scans</li>
+                <li>Being me, I made a small repository to extract info from this video and create a 3D model.</li>
+                <li><a href="https://github.com/AdamExley/Brain-Scan" target="_blank" rel="noopener noreferrer">Brain-Scan repo</a>.</li>
+            </ul>
+        </details> 
+    
+    </div>
+    
 
     <div class="project research">
         <div class="top">
             <div class="basic-info">
-                <h1 style="color:red">Research</h1>
+                <h1 style="color:var(--research-color)">Research</h1>
                 <h2>Robotic Pose Estimation and Verification</h2>
-                <h3>February – October 2021 (9 months)</h3>
-                <h4><span class="tooltip">AIMS Lab<span class="tooltiptext">Artificially Intelligent Manufacturing Systems Lab</span></span> | <span class="tooltip">CDME<span class="tooltiptext">Center for Design and Manufacturing Excellence</span></span> at Ohio State University</h4>
+                <h3>February – October 2021</h3>
+                <h4><span class="tooltip">AIMS Lab<span class="tooltiptext">Artificially Intelligent Manufacturing Systems Lab</span></span> | <span class="tooltip">CDME<span class="tooltiptext">Center for Design and Manufacturing Excellence</span></span> @ <span class="tooltip">OSU<span class="tooltiptext">Ohio State University</span></span></h4>
+                <h5><span class="skill">Python</span><span class="skill">Tensorflow</span></h5>
             </div>
             <img src="../assets/images/Demo-small-crop.gif" width="300px">
         </div>
@@ -159,10 +192,11 @@
     <div class="project industry">
         <div class="top">
             <div class="basic-info">
-                <h1 style="color:green">Industry</h1>
+                <h1 style="color:var(--industry-color)">Industry</h1>
                 <h2>A SharePoint-based Work Management System</h2>
-                <h3>June – August 2021 (3 months)</h3>
+                <h3>June – August 2021</h3>
                 <h4>FirstEnergy Corp.</h4>
+                <h5><span class="skill">Sharepoint</span></h5>
             </div>
             <img src="../assets/images/SharePoint.png">
         </div>
@@ -182,10 +216,11 @@
     <div class="project research">
         <div class="top">
             <div class="basic-info">
-                <h1 style="color:red">Research</h1>
+                <h1 style="color:var(--research-color)">Research</h1>
                 <h2>Autonomous Robotic Endotracheal Intubation</h2>
-                <h3>November 2020 – May 2021 (7 months)</h3>
-                <h4><span class="tooltip">CDME<span class="tooltiptext">Center for Design and Manufacturing Excellence</span></span> at The Ohio State University</h4>
+                <h3>November 2020 – May 2021</h3>
+                <h4><span class="tooltip">CDME<span class="tooltiptext">Center for Design and Manufacturing Excellence</span></span> @ <span class="tooltip">OSU<span class="tooltiptext">Ohio State University</span></span></h4>
+                <h5><span class="skill">Python</span></h5>
             </div>
         </div>
         <div class = "divider"></div>
@@ -205,10 +240,11 @@
     <div class="project class">
         <div class="top">
             <div class="basic-info">
-                <h1 style="color:blue">Class</h1>
+                <h1 style="color:var(--class-color)">Class</h1>
                 <h2>Escape Room Design Project: Escape Detention</h2>
-                <h3>February – April 2021 (3 months)</h3>
+                <h3>February – April 2021</h3>
                 <h4><span class="tooltip">ENGR 1282.01H<span class="tooltiptext">Fundamentals of Engineering for Honors II</span></span> | The Ohio State University</h4>
+                <h5><span class="skill">C++</span><span class="skill">Microcontrollers</span><span class="skill">Solidworks</span></h5>
             </div>
         </div>
         <div class = "divider"></div>
@@ -227,10 +263,11 @@
     <div class="project class">
         <div class="top">
             <div class="basic-info">
-                <h1 style="color:blue">Class</h1>
+                <h1 style="color:var(--class-color)">Class</h1>
                 <h2>Software Design Project: Connect 4</h2>
-                <h3>November – December 2020 (1 month)</h3>
+                <h3>November – December 2020</h3>
                 <h4><span class="tooltip">ENGR 1281.01H<span class="tooltiptext">Fundamentals of Engineering for Honors I</span></span> | The Ohio State University</h4>
+                <h5><span class="skill">C++</span></h5>
             </div>
         </div>
       <div class = "divider"></div>
@@ -248,11 +285,12 @@
     <div class="project personal">
         <div class="top">
             <div class="basic-info">
-                <h1 style="color:purple">Personal</h1>
+                <h1 style="color:var(--personal-color)">Personal</h1>
                 <h2>Custom Ribbon Microphone</h2>
                 <h3>June 2020</h3>
+                <h5><span class="skill">Soldering</span><span class="skill">3D Design</span></h5>
             </div>
-            <img src="../assets/images/ribbon_mic.jpg">
+            <img src="../assets/images/ribbon_mic.png">
         </div>
         <div class = "divider"></div>
         <details>
@@ -270,12 +308,13 @@
     <div class="project personal class">
         <div class="top">
             <div class="basic-info">
-                <h1><span style="color:purple">Personal</span> / <span style="color:blue">Class</span></h1>
+                <h1><span style="color:var(--personal-color)">Personal</span> / <span style="color:var(--class-color)">Class</span></h1>
                 <h2>Auto-Calibrating Temperature Sensor</h2>
                 <h3>January 2020</h3>
-                <h4>Science Olympiad Team | New Philadelphia High School</h4>
+                <h4>Science Olympiad Team | <span class="tooltip">NPHS<span class="tooltiptext">New Philadelphia High School</span></span></h4>
+                <h5><span class="skill">C</span><span class="skill">Microcontrollers</span><span class="skill">Soldering</span></h5>
             </div>
-            <img src="../assets/images/detector_building.jpg">
+            <img src="../assets/images/detector_building.png">
         </div>
         <div class = "divider"></div>
         <details>
@@ -289,13 +328,38 @@
         </details> 
     </div>
 
+
+    <div class="project personal">
+        <div class="top">
+            <div class="basic-info">
+                <h1><span style="color:var(--personal-color)">Personal</span></h1>
+                <h2>Installed Remote Start System in Car</h2>
+                <h3>July 2019</h3>
+                <h5><span class="skill">3D Printing</span><span class="skill">Soldering</span></h5>
+            </div>
+        </div>
+        <div class = "divider"></div>
+        <details>
+            <summary>Project Details</summary>
+            <ul>
+                <li>I installed a <a href="https://fortin.ca/">Fortin</a> bypass module and remote start system in my 2012 Ford Focus.</li>
+                <li>Most of the wiring was done with premade harnesses, but was very hard to access.</li>
+                <li>In order to make sure the system was safe, I designed a custom mount for a switch that is able to detect when the car's hood is lifted.</li>
+            </ul>
+        </details> 
+    
+    </div>
+
+
+
     <div class="project research class">
         <div class="top">
             <div class="basic-info">
-                <h1><span style="color:red">Research</span> / <span style="color:blue">Class</span></h1>
+                <h1><span style="color:var(--research-color)">Research</span> / <span style="color:var(--class-color)">Class</span></h1>
                 <h2>The Effects of Pitch and Mode on the Perceived Emotional Valence of Musical Melodies</h2>
-                <h3>October 2018 – April 2019 (7 months)</h3>
-                <h4><span class="tooltip">AP<span class="tooltiptext">Advanced Placement</span></span> Research Class | New Philadelphia High School</h4>
+                <h3>October 2018 – April 2019</h3>
+                <h4><span class="tooltip">AP<span class="tooltiptext">Advanced Placement</span></span> Research Class | <span class="tooltip">NPHS<span class="tooltiptext">New Philadelphia High School</span></span></h4>
+                <h5><span class="skill">Data Analysis</span><span class="skill">Excel</span></h5>
             </div>
             <img src="../assets/images/Research-pitch.svg">
         </div>
@@ -311,6 +375,54 @@
         </details> 
     
     </div>
+
+
+    <div class="project personal">
+        <div class="top">
+            <div class="basic-info">
+                <h1><span style="color:var(--personal-color)">Personal</span></h1>
+                <h2>"Hacking" My Car (Add Navigation & Backup Cam)</h2>
+                <h3>September 2018</h3>
+            </div>
+            <!-- <img src="../assets/images/car_reflash.png"> -->
+        </div>
+        <div class = "divider"></div>
+        <details>
+            <summary>Project Details</summary>
+            <ul>
+                <li>Using <a href="https://forscan.org/home.html">Forscan</a>, and my knowledge of wiring I was able to add a backup camera into my 2012 Ford Focus which acted exactly like a factory module.</li>
+                <li>Using other means, I was also able to re-flash my entertainment module to enable the factory navigation system.</li>
+                <li><span style="font-size: smaller;">Probably best to keep this on the down-low.</span></li>
+            </ul>
+        </details> 
+    
+    </div>
+
+
+    <div class="project personal">
+        <div class="top">
+            <div class="basic-info">
+                <h1><span style="color:var(--personal-color)">Personal</span></h1>
+                <h2>Custom-Built Quadcopter</h2>
+                <h3>October 2017</h3>
+                <h5><span class="skill">Soldering</span><span class="skill">3D Printing</span></h5>
+            </div>
+            <img src="../assets/images/quad.png">
+        </div>
+        <div class = "divider"></div>
+        <details>
+            <summary>Project Details</summary>
+            <ul>
+                <li>I build a custom FPV (First-Person View) quadcopter drone using hobbist parts.</li>
+                <li>In order to protect the camera and other circuitry, I created a custom 3D printed housing for the drone's carbon fiber frame. I did this by scanning the frame on a printer to get extremely accurate dimensions.</li>
+            </ul>
+        </details> 
+    
+    </div>
+
+
+
+
 
 
 </div>

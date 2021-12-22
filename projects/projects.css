@@ -1,6 +1,17 @@
 @import "../responsive.css";
 
 
+
+
+
+:root {
+    --research-color: red;
+    --personal-color: purple;
+    --class-color: blue;
+    --industry-color: green;
+}
+
+
 .hide{
     display: none;
 }
@@ -90,7 +101,7 @@
 
 .project .top img {
     text-align: center;
-    max-width: 60%;
+    width: clamp(10%, 250px ,60%);
     object-fit: contain;
     max-height: 225px;
 }
@@ -100,7 +111,7 @@
     width: min-content;
     height: fit-content;
     padding: 5px;
-    max-width: 60%;
+    max-width: 100%;
     align-content: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -110,14 +121,14 @@
 .project h1 {
     font-size: large;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
 }
 
 .project h2 {
     margin-top: 0px;
     font-size: large;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 .project h3 {
@@ -136,6 +147,30 @@
     margin-top: 2px;
     margin-bottom: 0px;
 }
+
+.project h5 {
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    width: min-content;
+    max-width: inherit;
+    white-space: pre-wrap;
+}
+
+.project .skill {
+    border-color: #999;
+    background-color: #ddd;
+    border-radius: 5px;
+    border-style: solid;
+    /* border-width: medium; */
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
 
 
 
@@ -225,19 +260,18 @@ details[open] summary {
 
 
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1900px) {
     .row {   
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1250px) {
     .row {   
         grid-template-columns: 1fr 1fr;
     }
 }
-
 
 
 @media screen and (max-width: 800px) {
@@ -246,22 +280,20 @@ details[open] summary {
     width: 100%;
 }
 
-.project .top img {   
-    max-width: 40%;
-}
 }
 
 
-@media screen and (max-width: 650px) {
-    .project .top img {   
-        max-width: 30%;
+@media screen and (max-width: 700px) {
+
+    .row {   
+        grid-template-columns: 1fr;
     }
     .project{
         width: 100%;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 
     .project .top img {   
         display: none;
