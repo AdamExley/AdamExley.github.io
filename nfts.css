@@ -1,0 +1,122 @@
+@import "menu.css";
+
+/* Style the body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+
+/* Header/logo Title */
+.header {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    text-align: center;
+    background: #bb0000;
+    color: white;
+    padding-bottom: 1px;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+    margin: 5px;
+    margin-bottom: 0px;
+}
+
+
+/* Column container */
+.row {  
+    align-items: center;
+    justify-content: center;
+    padding-right: 3%;
+    padding-left: 3%;
+    /* height: 1000px; */
+
+}
+
+.warn{
+    display: none;
+    flex: 70%;
+    background-color: white;
+    padding: 10px;
+    align-content: center;
+    max-width: 80%;
+    background-color: #ddd;
+    border-radius: 20px;
+    margin: 10px;
+    color: rgba(230, 0, 0, 0.6);
+}
+
+
+/* Main column */
+.sect {  
+    flex: 70%;
+    background-color: white;
+    padding: 10px;
+    align-content: center;
+    max-width: 85%;
+    background-color: #ddd;
+    border-radius: 20px;
+    margin: 10px;
+
+    transition-property: color;
+    transition-duration: .5s;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.sect ul{
+    max-width: 60%;
+}
+
+.sect ul li{
+    padding-bottom: 10px;
+}
+
+.sect h1 {
+    margin: 0px;
+    max-width: 60%;
+    color: black;
+}
+
+.sect img{
+    max-width: 40%;
+    display: block;
+    float: right;
+}
+
+.sect table{
+    max-width: 40%;
+    float: right;
+    display: block;
+    text-align: center;
+
+}
+
+.sect table img{
+    max-width: 95%;
+    display: inline-block;
+}
+
+.sect:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.sect table a{
+    font-size: smaller;
+}
+
+
+/* Phones */
+@media only screen and (max-width: 768px) {
+
+
+    .warn {
+        display: flex;
+    }
+
+}
+
+
+

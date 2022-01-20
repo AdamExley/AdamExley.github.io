@@ -24,25 +24,74 @@
 
 <style>
 
-.main img{
-  width:30%;
+.imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+  background-color: #222;
+  padding: 5px;
+}
+
+.imgs img{
+  width:100%;
   min-width:100px;
   display:inline-block
 }
 
-@media screen and (max-width: 700px) {
-  .main img {   
-        min-width: none;
-        width: 45%;
-    }
+
+
+@media screen and (max-width: 1700px) {
+  .imgs {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 5px;
+  }
+
+}
+
+
+@media screen and (max-width: 1300px) {
+  .imgs {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 5px;
+  }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  .imgs {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 5px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .imgs {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 5px;
+  }
 
 }
 
 @media screen and (max-width: 500px) {
-  .main img {   
-        min-width: none;
-        width: 90%;
-    }
+  .imgs {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2px;
+    row-gap: 2px;
+    padding: 2px;
+  }
 
 }
 
@@ -93,22 +142,22 @@
 </div>
 
 <div class="row" style="padding-left: 1%;padding-right: 1%;">
-    <div class="main" style="max-width: 80%;text-align: center;">
-        <!-- Insert Pictures --><img src="use\9.jpg" style="max-width:600px; ">
-<img src="use\14.jpg" style="max-width:600px; ">
-<img src="use\1.jpg" style="max-width:600px; ">
-<img src="use\12.jpg" style="max-width:600px; ">
-<img src="use\0.jpg" style="max-width:600px; ">
-<img src="use\8.jpg" style="max-width:600px; ">
-<img src="use\11.jpg" style="max-width:600px; ">
-<img src="use\7.jpg" style="max-width:600px; ">
-<img src="use\4.jpg" style="max-width:600px; ">
-<img src="use\3.jpg" style="max-width:600px; ">
-<img src="use\2.jpg" style="max-width:600px; ">
-<img src="use\6.jpg" style="max-width:600px; ">
-<img src="use\5.jpg" style="max-width:600px; ">
-<img src="use\10.jpg" style="max-width:600px; ">
-<img src="use\13.jpg" style="max-width:600px; ">
+    <div class="imgs" style="max-width: 95%;text-align: center;">
+        <!-- Insert Pictures --><img src="use\2.jpg">
+<img src="use\6.jpg">
+<img src="use\1.jpg">
+<img src="use\10.jpg">
+<img src="use\9.jpg">
+<img src="use\4.jpg">
+<img src="use\14.jpg">
+<img src="use\8.jpg">
+<img src="use\3.jpg">
+<img src="use\5.jpg">
+<img src="use\0.jpg">
+<img src="use\12.jpg">
+<img src="use\11.jpg">
+<img src="use\7.jpg">
+<img src="use\13.jpg">
         <!-- End Pictures -->
     </div>
 
