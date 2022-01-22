@@ -1,9 +1,6 @@
 @import "../responsive.css";
 
 
-
-
-
 :root {
     --research-color: red;
     --personal-color: purple;
@@ -264,6 +261,15 @@ details[open] summary {
     .row {   
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
+}
+
+
+@media screen and (max-width: 1600px) {
+    .project .top img {
+        width: clamp(10%, 225px ,35%);
+    }
+
 }
 
 
@@ -271,6 +277,7 @@ details[open] summary {
     .row {   
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
 
