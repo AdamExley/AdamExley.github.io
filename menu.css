@@ -10,6 +10,7 @@
     overflow: hidden;
     background-color: #222;
     padding-top: 2%;
+    flex: 0 1 auto;
 }
 
 /* Navigation bar links */
@@ -42,15 +43,20 @@
 
 /* Selected Tab*/
 .navbar a.selected {
-    background-color: white;
-    color: black;
+    background-color: #333;
+    /* background-image: linear-gradient(#fff,#eee,#ccc, #333); */
+    color: white;
     font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 /* Change color on hover */
 .navbar a:hover {
     background-color: #ddd;
     color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 /* Menu icon for small devices */

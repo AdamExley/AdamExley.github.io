@@ -23,42 +23,48 @@
 </head>
 
 <style>
-.h_iframe iframe {
-    width:100%;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-.h_iframe {
-    width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
 
+.secondary iframe {
+    /* width:100%; */
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 100%;
 }
+
+
+.secondary {
+    width:100%;
+    flex-grow: 1;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+
 </style>
 
 <body>
 
-<div class="header">
-  <h1 style="margin-bottom: 10px;"><a href="../">Adam M. Exley</a></h1>
-  
-</div>
+  <div class="navbar" id = "content">
 
-<div class="navbar" id = "content">
-  <a href="../">About Me</a>
-  <a href="" class="selected">Resume</a>
-  <a href="../projects">Projects</a>
-  <a href="../coursework">Coursework</a>
-  <a href="../photography">Photography</a>
-  <a href="../music" >Music</a>
-  <a href="../contact">Contact</a>
-  <a href="javascript:void(0);" class="icon" onclick="DropDownFunc()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+    <a href="" class="name">Adam M. Exley</a>
+    <a href="javascript:void(0);" class="icon" onclick="DropDownFunc()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="../">About Me</a>
+    <a href="../resume" class="selected">Resume</a>
+    <a href="../projects">Projects</a>
+    <a href="../coursework">Coursework</a>
+    <a href="../photography">Photography</a>
+    <a href="../music" >Music</a>
+    <a href="../contact">Contact</a>
+  
+  </div>
 
 <div class="row">
   <div class="main">
@@ -66,10 +72,9 @@
     <p>This Resume was updated on 9/30/2021 and is a .pdf file intended for reference only. If you would like a more recent update or a different format of my resume, please contact me.
         For similar information, you might want to check out my <a href="https://www.linkedin.com/in/adam-exley/" target="_blank" rel="noopener noreferrer"> LinkedIn account</a> as well!</p>
   </div>
-  <div class="side" style="width: 95%;max-width: 1500px;height: 60vh;min-height: 600;">
-    <div class="h_iframe">
-    <iframe src="../assets/resumes/Adam Exley Resume Sep 2021 Redacted.pdf" width="100%"></iframe>
-    </div></div>
+  <div class="secondary" style="min-height: 70vh;">
+    <iframe src="../assets/resumes/Adam Exley Resume Sep 2021 Redacted.pdf#view=fitH"></iframe>
+  </div>
 </div>
 
 <div class="footer">

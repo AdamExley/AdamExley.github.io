@@ -29,35 +29,34 @@
 </head>
 <body>
 
-<div class="header">
-  <h1 style="margin-bottom: 10px;"><a href="../">Adam M. Exley</a></h1>
-  
+<div class="navbar" id ="content">
+
+    <a href="" class="name">Adam M. Exley</a>
+    <a href="javascript:void(0);" class="icon" onclick="DropDownFunc()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a href="../">About Me</a>
+    <a href="../resume">Resume</a>
+    <a href="../projects" class="selected">Projects</a>
+    <a href="../coursework">Coursework</a>
+    <a href="../photography">Photography</a>
+    <a href="../music" >Music</a>
+    <a href="../contact">Contact</a>
+    
 </div>
 
-<div class="navbar" id = "content">
-  <a href="../">About Me</a>
-  <a href="../resume">Resume</a>
-  <a href="" class="selected">Projects</a>
-  <a href="../coursework">Coursework</a>
-  <a href="../photography">Photography</a>
-  <a href="../music" >Music</a>
-  <a href="../contact">Contact</a>
-  <a href="javascript:void(0);" class="icon" onclick="DropDownFunc()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
 
-    <div class="filterContainer" id="myFilters">
-        <div class="filterSubcontainer"><button class="filterButton active" onclick="filterSelection('all')"> Show All</button></div>
-        <div class="filterSubcontainer">
-            <button class="filterButton" onclick="filterSelection('research')" style="color:var(--research-color)"> Research</button>
-            <button class="filterButton" onclick="filterSelection('industry')" style="color:var(--industry-color)"> Industry</button>
-            <button class="filterButton" onclick="filterSelection('class')" style="color:var(--class-color)"> Class</button>
-            <button class="filterButton" onclick="filterSelection('personal')" style="color:var(--personal-color)"> Personal</button>
-        </div>
-
+<div class="filterContainer" id="myFilters">
+    <div class="filterSubcontainer"><button class="filterButton active" onclick="filterSelection('all')"> Show All</button></div>
+    <div class="filterSubcontainer">
+        <button class="filterButton" onclick="filterSelection('research')" style="color:var(--research-color)"> Research</button>
+        <button class="filterButton" onclick="filterSelection('industry')" style="color:var(--industry-color)"> Industry</button>
+        <button class="filterButton" onclick="filterSelection('class')" style="color:var(--class-color)"> Class</button>
+        <button class="filterButton" onclick="filterSelection('personal')" style="color:var(--personal-color)"> Personal</button>
     </div>
-    <script src="filter.js"></script>
+
+</div>
+<script src="filter.js"></script>
 
 <div class="title">Ongoing</div>
 
@@ -428,10 +427,6 @@
 
 </div>
 
-
-<div class="footer">
-  <p>Want to learn more about me? Feel free to contact me!</p>
-</div>
 
 </body>
 </html>

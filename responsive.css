@@ -1,9 +1,15 @@
 @import "menu.css";
 
+
 /* Style the body */
-body {
+html, body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
+    min-height: 100vh;
+    /* height: 100%; */
+    display: flex;
+    flex-flow: column;
+    color: white;
 }
 
 
@@ -20,23 +26,46 @@ body {
 }
 
 
+
+  
+.box .row.content {
+    flex: 1 1 auto;
+    color: white;
+}
+  
+
+
+
 /* Column container */
 .row {  
+    font-family: 'Open Sans', sans-serif;
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
     justify-content: center;
     padding-right: 10%;
     padding-left: 10%;
+    background-image: linear-gradient(#333, #444);
+    flex: 1 1 auto;
 }
 
 
 /* Main column */
 .main {  
     flex: 70%;
-    background-color: white;
+    /* background-color: #444; */
+    padding: 10px;
+    align-content: center;
+    max-width: 80%;
+}
+
+.secondary {
+    padding: 10px;
+    text-align: center;
+    flex: 100%;
     padding: 10px;
     align-content: center;
     max-width: 80%;
@@ -53,9 +82,10 @@ body {
 
 /* Footer */
 .footer {
-padding: 20px;
-text-align: center;
-background: #ddd;
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: whitesmoke;
 }
 
 
