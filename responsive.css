@@ -26,8 +26,21 @@ html, body {
 }
 
 
+/* unvisited link */
+a:link {
+    color: rgb(240, 197, 43);
+}
 
-  
+/* visited link */
+a:visited {
+    color: rgb(194, 153, 7);
+}
+
+/* mouse over link */
+a:hover {
+    color: green;
+}
+
 .box .row.content {
     flex: 1 1 auto;
     color: white;
