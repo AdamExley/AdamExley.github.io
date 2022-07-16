@@ -7,6 +7,7 @@
   <!-- Stylesheet and title -->
   <title>Adam M. Exley - Home</title>
   <link rel='stylesheet' type='text/css' href='responsive.css'>
+  <link rel='stylesheet' type='text/css' href='home.css'>
 
   <!-- Icon -->
   <link rel="icon" href="icons/cropped-AME-32x32.png" sizes="32x32">
@@ -24,40 +25,46 @@
 
 <body>
 
-<div class="header">
-  <h1 style="margin-bottom: 10px;"><a href="">Adam M. Exley</a></h1>
-  <p style="font-size: 25px; margin-bottom: 0px; margin-top: 10px; color: #ECF19F;">Honors Electrical and Computer Engineering Student</p>
-  <p style="font-size: 20px; margin-top: 0px;"><em>at The Ohio State University</em></p>
-</div>
+
 
 <div class="navbar" id = "content">
+
+  <a href="" class="name">Adam M. Exley</a>
+  <a href="javascript:void(0);" class="icon" onclick="DropDownFunc()">
+    <i class="fa fa-bars"></i>
+  </a>
   <a href="" class="selected">About Me</a>
   <a href="resume">Resume</a>
   <a href="projects">Projects</a>
   <a href="coursework">Coursework</a>
   <a href="photography">Photography</a>
-  <a href="music" >Music</a>
   <a href="contact">Contact</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+
 </div>
+
 
 <div class="row">
-  <div class="main">
-    <h2>About Me</h2>
-    <p>I invite you to check out my other pages (above) for more directed information, but here's a general bio:</p>
-    <p>I'm Adam Exley, a Sophomore at The Ohio State University studying Electrical and Computer Engineering in the Honors Program.</p>
-    <p>I like to learn as much as I can about whatever I can get my hands on. In school this has helped me excel in physics, calculus, and other STEM fields, but it's a little more noticeable outside of the classroom. Once something gets a hold of my interest, I'm going to pursue it. So far this has led me to get into fixing electronics (like DSLR cameras), arranging music, photography, 3D printing, and even programming in Python - just to name a few things. Who knows what it'll be next? (I sure don't)</p>
-    <p>Overall, most of my interests have fallen along the lines of electronics and technology, which is why I decided to study Electrical and Computer Engineering. Aside from my <a href="coursework">coursework</a>, I've also had the opportunity to engage in research at Ohio State through the Center for Design and Manufacturing Excellence. I've primarily focused on how Artificial Intelligence can be implemented in different settings. More details are available under the <a href="projects">Projects page</a>.</p>
-    <p>If you'd like to learn more about me, this website should help, but feel free to <a href="contact">reach out</a> if you want to chat or know more. I mean I can only put <em>so much</em> on here until it starts boring people, you know?</p>
+  <div class="main_attention">
+    <div style="justify-self: flex-start;"><h3>I focus on:</h3></div>
+    <div style="justify-self: flex-start;"><h1>Electrical Engineering</h1></div>
+    <div style="justify-self: center;"><h1>Software</h1></div>
+    <div style="justify-self: flex-end;"><h1>Photography</h1></div>
+    <div style="justify-self: flex-start;"><h2>And <i>whatever</i> else I get myself into...</h2></div>
   </div>
-  <div class="side"><img src="assets/images/Headshot-small.jpg" alt="A picture of me" style="width:300px;"></div>
+
+  <div class="main" style="display:grid;justify-items: center;">
+    <table>
+      <tr><td>That's me! -></td><td><img src="assets/images/Headshot-small.jpg" alt="A picture of me" style="width:300px;"></td></tr>
+    </table>
+
+  </div>
+
 </div>
 
-<div class="footer">
-  <p>Want to learn more about me? Feel free to contact me!</p>
-</div>
+
+
+
+
 
 </body>
 </html>

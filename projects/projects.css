@@ -1,9 +1,6 @@
 @import "../responsive.css";
 
 
-
-
-
 :root {
     --research-color: red;
     --personal-color: purple;
@@ -28,6 +25,7 @@
     padding-right: 5%;
     padding-left: 5%;
     padding-bottom: 20px;
+    background-image: linear-gradient(rgb(41, 40, 40), #444);
 }
 
 .filterButton{
@@ -50,7 +48,7 @@
 }
 
 .filterButton.active {
-    background-color: #ddd;
+    background-color: #666;
     box-shadow: 1px 1px 1px rgb(180, 180, 180);
 }
 
@@ -61,6 +59,8 @@
 .filterContainer{
     display: block;
     text-align: center;
+    background-color: #333;
+    padding-bottom: 15px;
 }
 
 /* Project divider */
@@ -77,18 +77,19 @@
 /* A project Card */
 .project {  
     flex: 100%;
-    background-color: #eee;
+    background-color: #aaa;
     padding: 10px;
     justify-content: center;
     align-content: center;
     max-width: 650px;
     border-radius: 10px;
     margin: 5px;
-    box-shadow: 3px 3px 3px rgb(180, 180, 180);
+    box-shadow: 3px 3px 3px #333;
+    color: black;
 }
 
 .project:hover{
-    box-shadow: 5px 5px 3px rgb(180, 180, 180);
+    box-shadow: 7px 7px 4px #444;
 }
 
 
@@ -160,7 +161,7 @@
 }
 
 .project .skill {
-    border-color: #999;
+    border-color: #666;
     background-color: #ddd;
     border-radius: 5px;
     border-style: solid;
@@ -264,6 +265,15 @@ details[open] summary {
     .row {   
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
+}
+
+
+@media screen and (max-width: 1600px) {
+    .project .top img {
+        width: clamp(10%, 225px ,35%);
+    }
+
 }
 
 
@@ -271,6 +281,7 @@ details[open] summary {
     .row {   
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
 
