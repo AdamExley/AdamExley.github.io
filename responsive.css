@@ -92,6 +92,41 @@ a:hover {
 }
 
 
+/* Main column */
+.main_attention {  
+    flex: 70%;
+    padding: 10px;
+    max-width: 80%;
+    min-width: 60%;
+    display: grid;
+}
+
+.main_attention div {
+    width: fit-content;
+    height: fit-content;
+}
+
+.main_attention h1 {
+    width: fit-content;
+    margin: 0px;
+    white-space: nowrap;
+}
+
+.main_attention h2 {
+    width: fit-content;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.main_attention h3 {
+    width: fit-content;
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+}
+
+
+
 
 /* Footer */
 .footer {
@@ -106,7 +141,7 @@ a:hover {
 /* Phones */
 @media only screen and (max-width: 768px) {
     .row {
-        flex-direction: column;
+        /* flex-direction: column; */
         margin-left: 0px;
         margin-right: 0px;
         padding-right:0px;
