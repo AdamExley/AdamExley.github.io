@@ -172,7 +172,20 @@
     white-space: nowrap;
 }
 
+/* unvisited link */
+.project a:link {
+    color: rgb(56, 43, 240);
+}
 
+/* visited link */
+.project a:visited {
+    color: rgb(63, 19, 194);
+}
+
+/* mouse over link */
+.project a:hover {
+    color: rgb(0, 97, 19); 
+}
 
 
 .divider {
