@@ -16,8 +16,61 @@
     margin: 10px;
 }
 
+
+
+
+.site{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-right: 10%;
+    padding-left: 10%;
+    background-image: linear-gradient(#333, #444);
+    /* flex: 1 1 auto; */
+}
+
+.intro{
+    /* display: flex; */
+    /* justify-content: center; */
+    flex-shrink: 50%;
+    max-width: 300px;
+}
+
+.timeline_container{
+    text-align: center;
+    justify-content: center;
+}
+
+
 /* .section h2
 {
     text-align: center;
     margin: 5px;
 } */
+
+
+
+/* Phones */
+@media only screen and (max-width: 768px) {
+    .site {
+        /* flex-direction: column; */
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+}
+
+/* Tablets */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .site {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    
+}

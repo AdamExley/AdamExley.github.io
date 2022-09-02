@@ -144,13 +144,14 @@ a:hover {
         /* flex-direction: column; */
         margin-left: 0px;
         margin-right: 0px;
-        padding-right:0px;
+        padding-right: 0px;
         padding-left: 0px;
     }
     
     .main {
         padding: 2px;
-        width: 90%;
+        width: 97%;
+        max-width: 97%;
     }
 
     .side {
